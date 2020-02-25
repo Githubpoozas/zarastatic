@@ -49,7 +49,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: .7rem;
+  padding: 0;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -68,8 +68,21 @@ a:active {
   color: #000;
 }
 
-img {
+.slick-banner {
   width: 100%;
+  height: 100vh;
+}
+
+.slick-banner img {
+  width: 100%;
+  height: 100vh;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header {
@@ -103,7 +116,45 @@ img {
   display: inline-block;
 }
 
-#searchLabel > a {
-  font-size: 100px;
+.header__user__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__user__menu li {
+  list-style: none;
+  padding-left: 2rem;
+  font-size: 1.7rem;
+}
+
+.header__user__menu-cart-link {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.header__user__menu-cart-link svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -53%);
+          transform: translate(-50%, -53%);
+}
+
+.header__user__menu-cart-link-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,7 @@
 img {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .header {
@@ -38,10 +40,43 @@ img {
 
     
     }
+
+    &__user{
+
+        &__menu{
+            display: flex;
+            justify-content: flex-end;   
+             align-items: center;
+            li{
+                list-style: none;
+                padding-left: 2rem;
+                font-size: 1.7rem;
+            }
+
+            &-cart{
+                &-link{
+                    display: block;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+                 padding-left: 1.6rem;
+
+                    svg{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -53%);
+                    }
+                    &-item{
+                     position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
-
-#searchLabel>a {
-    font-size: 100px;
-}
