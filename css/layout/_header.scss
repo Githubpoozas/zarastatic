@@ -1,0 +1,47 @@
+img {
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 15% 60% 20%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2.5rem;
+
+    &__logo {
+        &-link {
+            svg {
+                width: 172px;
+            }
+        }
+    }
+
+    &__search {
+        &__link{
+            &-label{
+                font-size: 3rem;
+                margin-right: 1rem;
+            }
+            &-line{
+                border-bottom: 1px solid 
+                $zara-black;
+                width: 15rem;
+                display: inline-block;
+            }
+        }
+        
+
+    
+    }
+}
+
+
+
+#searchLabel>a {
+    font-size: 100px;
+}
