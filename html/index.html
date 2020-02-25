@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="../css/slick.css" />
     <link rel="stylesheet" href="../css/slick-theme.css" />
+  <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body
@@ -86,26 +87,132 @@
       </div>
     </div>
 
-    <div class="slick-banner">
+    <section class="slick-banner">
       <picture class="imgBox">
-        <source media="(orientation: portrait)" srcset="../img/portrait_0.jpg">
-          <source media="(orientation: landscape)" srcset="../img/landscape_0.jpg">
-            <img src="../img/landscape_0.jpg" alt="">
+        <source
+          media="(orientation: portrait)"
+          srcset="../img/portrait_0.jpg"
+        />
+        <source
+          media="(orientation: landscape)"
+          srcset="../img/landscape_0.jpg"
+        />
+        <img src="../img/landscape_0.jpg" alt="" />
       </picture>
       <picture class="imgBox">
-        <source media="(orientation: portrait)" srcset="../img/rsz_banner1.jpg">
-          <source media="(orientation: landscape)" srcset="../img/rsz_banner2.jpg">
-            <img src="../img/rsz_banner2.jpg" alt="">
+        <source
+          media="(orientation: portrait)"
+          srcset="../img/rsz_banner1.jpg"
+        />
+        <source
+          media="(orientation: landscape)"
+          srcset="../img/rsz_banner2.jpg"
+        />
+        <img src="../img/rsz_banner2.jpg" alt="" />
       </picture>
+    </section>
 
-    </div>
-
+    <footer class="footer">
+      <div class="footer__subscribe">
+        <h2 class="footer__subscribe-title">JOIN OUR NEWSLETTER</h2>
+        <form action="" class="footer__subscribe-form">
+          <fieldset>
+            <div class="footer__subscribe-form-entry">
+              <label
+                for="newsletter-email"
+                class="footer__subscribe-form__label"
+                >Enter your email address here</label
+              >
+              <input
+                type="text"
+                name="email"
+                class="footer__subscribe-form__input"
+                autocomplete="off"
+                maxlength="100"
+                required
+              />
+            </div>
+          </fieldset>
+          <div class="footer__subscribe__additional">
+            <fieldset>
+              <div class="footer__subscribe__additional__box">
+                <input
+                  class="footer__subscribe__additional__box__input"
+                  type="checkbox"
+                  name="woman"
+                  value="woman"
+                  id="woman"
+                />
+                <label
+                  class="footer__subscribe__additional__box__label"
+                  for="woman"
+                  ><span
+                    class="footer__subscribe__additional__box__checkbox"
+                  ><i class="footer__subscribe__additional__box__checkbox-icon fas fa-check"></i></span>
+                  Woman</label
+                >
+                <input
+                  class="footer__subscribe__additional__box__input"
+                  type="checkbox"
+                  name="man"
+                  value="man"
+                  id="man"
+                />
+                <label
+                  class="footer__subscribe__additional__box__label"
+                  for="man"
+                  ><span
+                    class="footer__subscribe__additional__box__checkbox"
+                  ><i class="footer__subscribe__additional__box__checkbox-icon fas fa-check"></i></span>
+                  Man</label
+                >
+                <input
+                  class="footer__subscribe__additional__box__input"
+                  type="checkbox"
+                  name="kid"
+                  value="kid"
+                  id="kid"
+                />
+                <label
+                  class="footer__subscribe__additional__box__label"
+                  for="kid"
+                  ><span
+                    class="footer__subscribe__additional__box__checkbox"
+                  ><i class="footer__subscribe__additional__box__checkbox-icon fas fa-check"></i></span>
+                  Kid</label
+                >
+                
+              </div>
+              <div class="footer__subscribe__policy__box">
+                <input
+                  class="footer__subscribe__policy__box__input"
+                  type="checkbox"
+                  name="policy"
+                  value="policy"
+                  id="policy"
+                />
+                <label
+                  class="footer__subscribe__policy__box__label"
+                  for="policy"
+                  ><span
+                    class="footer__subscribe__policy__box__checkbox"
+                  ><i class="footer__subscribe__policy__box__checkbox-icon fas fa-check"></i></span>
+                  I ACCEPT THE <a class="footer__subscribe__policy-link">PRIVACY STATEMENT</a></label
+                >
+      
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </footer>
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/response.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/slick-banner.js"></script>
-
+    <script src="../js/footer.js"></script>
+    <script src="../js/all.min.js"></script>
   </body>
 </html>
