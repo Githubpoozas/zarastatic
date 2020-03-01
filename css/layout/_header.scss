@@ -7,13 +7,21 @@ img {
 .header {
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     width: 100%;
     display: grid;
     grid-template-columns: 5% 15% 60% 20%;
     justify-items: center;
     align-items: center;
     margin-top: 2.5rem;
+
+    &__menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__logo {
         &-link {

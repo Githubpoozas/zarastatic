@@ -1,9 +1,15 @@
 body,input{
-    font-family: 'Bebas Neue', Arial, sans-serif;
+    font-family:'Bebas Neue', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 a,
 a:active{
     text-decoration: none;
     color: $zara-black;
+}
+
+ul,
+ol{
+    list-style-type: none;
 }

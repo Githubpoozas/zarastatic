@@ -60,12 +60,18 @@ body {
 
 body, input {
   font-family: 'Bebas Neue', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 a,
 a:active {
   text-decoration: none;
   color: #000;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 .slick-banner {
@@ -242,7 +248,7 @@ img {
 .header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -253,6 +259,20 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2.5rem;
+}
+
+.header__menu {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo-link svg {
@@ -310,5 +330,71 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.sidebar {
+  position: fixed;
+  min-width: 300px;
+  max-width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  left: -400px;
+  top: 0;
+  padding: 80px 30px 0 30px;
+  z-index: 20;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar__menu__subcategory {
+  margin: 24px 0;
+}
+
+.sidebar-show {
+  left: 0;
+}
+
+.sidebar__menu__category-name {
+  font-size: 5.5rem;
+  letter-spacing: .4px;
+  font-stretch: condensed;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.category-level-2 {
+  margin: 2.4rem 0;
+}
+
+.category-level-2-name {
+  font-size: 3rem;
+}
+
+.category-level-3 {
+  margin: .5rem 0 10rem;
+}
+
+.category-level-3-name {
+  font-size: 2rem;
+}
+
+.category-level-3-li:first-child {
+  margin-bottom: .7rem;
+}
+
+.sidebar__menu__subcategory {
+  display: none;
+}
+
+.showmenu {
+  display: block;
+}
+
+.info-menu {
+  padding-top: 60px;
+}
+
+.info-menu span {
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
